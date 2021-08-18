@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "BebasNeueRegular";
+  src: url("../fonts/BebasNeueRegular.woff") format("woff"),
+    url("../fonts/BebasNeueRegular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box; /*правильно считает ширину и высоту элементов-ставим обязательно*/
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-color: #635854;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 4px solid #3596f5;
+}
+
+.navbar {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu {
+  display: flex;
+  margin: 0; /*отключаем внешние отступы*/
+  padding: 0; /*отключаем внутринние отступы*/
+  list-style: none; /*отключаем точки у li*/
+  text-align: center; /*текст кнопок меню по центру*/
+}
+
+.navbar-item {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.navbar-link {
+  text-decoration: none; /*убираем подчеркивание ссылок*/
+  color: #fff;
+}
+
+.navbar-contact {
+  text-align: right; /*выравниваем текст по правую сторону*/
+}
+
+.navbar-text {
+  display: block;
+  color: #fff;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.navbar-phone {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.mine {
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 54px;
+  display: flex;
+}
+
+.mine-info {
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mine-title {
+  font-family: BebasNeueRegular, sans-serif;
+  font-size: 37px;
+  line-height: 37px;
+  color: #635854;
+  margin: 0;
+}
+
+.home-image path {
+  opacity: 0; /*прозрачность*/
+  cursor: pointer; /*курсор пальцем*/
+}
+
+.home-image path:hover {
+  opacity: 1;
+}
+
+.counter {
+  font-size: 124px;
+  color: #635854;
+  font-family: BebasNeueRegular, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.counter-group {
+  display: flex;
+  flex-direction: column; /*направление значений с верху-вниз*/
+  align-items: center; /*выравнивание по центру*/
+}
+
+.counter-button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.counter-arrow-down {
+  transform: rotateX(180deg); /*поворот элемента на 180 градусов по оси Х */
+}
+
+.button-primary {
+  background-color: #3596f5;
+  padding: 16px 36px;
+  border-radius: 6px;
+  color: #fff;
+}
